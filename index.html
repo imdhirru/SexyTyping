@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGSY TYPER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="SEGSY TYPER">SEGSY TYPER</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">WPM</span>
+                    <span id="wpm" class="value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Accuracy</span>
+                    <span id="accuracy" class="value">0%</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Time</span>
+                    <span id="time" class="value">60s</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="type-box">
+            <div id="text-display" class="text-display"></div>
+            <div id="cursor" class="cursor"></div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <button id="restart-btn" class="cyber-button">
+                    <span class="cyber-button__text">restart</span>
+                </button>
+                <div class="mode-options">
+                    <button class="cyber-button mode-option" data-mode="easy">
+                        <span class="cyber-button__text">EASY</span>
+                    </button>
+                    <button class="cyber-button mode-option active" data-mode="normal">
+                        <span class="cyber-button__text">NORMAL</span>
+                    </button>
+                    <button class="cyber-button mode-option" data-mode="baap">
+                        <span class="cyber-button__text">BAAP</span>
+                    </button>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="time-options">
+                    <button class="cyber-button time-option" data-time="15">
+                        <span class="cyber-button__text">15s</span>
+                    </button>
+                    <button class="cyber-button time-option active" data-time="30">
+                        <span class="cyber-button__text">30s</span>
+                    </button>
+                    <button class="cyber-button time-option" data-time="60">
+                        <span class="cyber-button__text">60s</span>
+                    </button>
+                    <div class="custom-time">
+                        <input type="number" id="custom-time-input" class="cyber-input" min="1" max="999" placeholder="Custom time">
+                        <button class="cyber-button time-option" id="custom-time-btn">
+                            <span class="cyber-button__text">Set</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
